@@ -1,0 +1,28 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "iotUpdate",
+    "buildTool": "maven",
+    "clientFramework": "no",
+    "creationTimestamp": 1718098465221,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "enableHibernateCache": true,
+    "entities": ["DeviceConfigUpdate"],
+    "jhipsterVersion": "8.6.0",
+    "jwtSecretKey": "NDlhOGIxNmJmMjNjYTY2NWIyY2IxMGNjMzdhNDQzNGM0NGZlMDQxNWU5ZWUyM2EwMmQ4ZTMyNmFmYTJmMDU1MDI5NDU5OTkwYjQ5ZmI3YTMyOTcwMmY0NjAwMGVjMTM1M2RmZjFjZmFlOGQ5ODZjNTgwNDE5OGVmMDg1OTU4ZTE=",
+    "languages": ["en", "de"],
+    "lastLiquibaseTimestamp": 1718017146000,
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/montage/connect",
+    "packageName": "com.montage.connect",
+    "prodDatabaseType": "mysql",
+    "reactive": false,
+    "serverPort": "8080",
+    "skipClient": true,
+    "skipCommitHook": true,
+    "testFrameworks": ["gatling"]
+  }
+}

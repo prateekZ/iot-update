@@ -1,0 +1,15 @@
+entity DeviceConfigUpdate {
+	configVersion String,
+    firmwareVersion String,
+	fileName String,
+	deviceId String,
+    binaryFile Blob,
+    dateTime Instant
+    customerId String
+    groupID String
+}
+
+dto * with mapstruct
+filter DeviceConfigUpdate
+service DeviceConfigUpdate with serviceImpl
+paginate DeviceConfigUpdate with pagination

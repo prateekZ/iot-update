@@ -1,0 +1,32 @@
+application {
+  config {
+    baseName iotUpdate
+    applicationType monolith
+    reactive false
+    clientFramework no
+    packageName com.montage.connect
+    buildTool maven
+    testFrameworks [gatling]
+    serverPort 8080
+    authenticationType jwt
+    databaseType sql
+    prodDatabaseType mysql
+    devDatabaseType mysql
+    enableHibernateCache true
+    nativeLanguage en
+    languages [en, de]
+  }
+  entities DeviceConfigUpdate
+}
+
+entity DeviceConfigUpdate {
+	configVersion String,
+    firmwareVersion String,
+    binaryFile Blob,
+    dateTime Instant
+}
+
+dto * with mapstruct
+filter DeviceConfigUpdate
+service DeviceConfigUpdate with serviceImpl
+paginate DeviceConfigUpdate with pagination
